@@ -1,0 +1,42 @@
+.her_image_two_div{
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.inner_hero_tag{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.her_image_two_div::before{
+    content: '';
+    background-image: url('../Assets/mac.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.inner_hero_tag h1{
+    font-size: 2.4rem;
+}
+.inner_hero_tag p{
+    margin-top: 5px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media only screen and (max-width:640px){
+    .inner_hero_tag h1{
+        font-size: 2rem;
+    }
+}

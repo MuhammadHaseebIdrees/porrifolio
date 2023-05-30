@@ -1,0 +1,87 @@
+.project_heading {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.porjects_container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.projects_card {
+    background-color: #1a1919;
+    padding: 1.2rem 1rem;
+    /* it can be used to controll the width accordingly to the decrease of width. If You want to decrease the width of the and want to reduce the inner boxes width sequently so you can use it */
+    /* flex: 1 1 350px; */
+}
+
+.projects_card img {
+    width: 100%;
+}
+
+.card_title_work {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.work_description {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.work_card_btns {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.work_card_single_btn {
+    display: block;
+    /* width: 30%; */
+    /* margin: 2rem auto; */
+    background-color: #FFFF00;
+    height: 3rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+/* @media only screen and (max-width:1060px) {
+    .porjects_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .porjects_container:last-child {
+        /* width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
+/* }
+
+    .projects_card:last-child {
+        width: 209%;
+    } */
+/* } */
+
+@media only screen and (max-width:740px) {
+    .porjects_container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    /* .projects_card:last-child {
+        width: 100%;
+    } */
+}

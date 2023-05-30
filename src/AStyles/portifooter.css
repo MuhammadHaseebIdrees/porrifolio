@@ -1,0 +1,63 @@
+.porti_Footer {
+    width: 100%;
+    padding: 6rem 2rem;
+    background-color: rgba(19, 19, 19, 0.8);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.porti-footer_left {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.footer_location {
+    display: flex;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.address_second_line {
+    margin-top: 15px;
+}
+
+.footer_phone {
+    margin-bottom: 5px;
+}
+
+.phone_icon,
+.footer_mail {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.porti-footer_right {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.social_icons_footer {
+    margin-top: 1rem;
+}
+.about_company{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer_paragraph{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media screen and (max-width:640px){
+    .porti_Footer{
+        grid-template-columns: 1fr;
+    }   
+}

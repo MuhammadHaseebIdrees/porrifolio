@@ -1,0 +1,112 @@
+.memory_game_main_div {
+    background-color: #fae19d;
+    max-height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app_memory_game_heading {
+    font-size: 2rem;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.memory_game_container {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.single_card_memory:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.single_card_memory {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    animation: 2s hidecard linear;
+    transition: transform 0.5s;
+    border-radius: 8px;
+}
+
+@keyframes hidecard {
+
+    0%,
+    70% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.single_card_memory img {
+    max-width: 80%;
+    max-height: 80%;
+    transform: scale(0);
+    transition: transform 0.5s;
+    animation: 2s hideimage linear;
+}
+
+@keyframes hideimage {
+
+    0%,
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.single_card_memory.active {
+    transform: rotateY(0)
+}
+
+.single_card_memory.wrong {
+    background-color: #fd245a;
+}
+
+.single_card_memory.success {
+    background-color: #65e469;
+}
+
+.single_card_memory.active img {
+    transform: scale(1);
+}
+
+@media only screen and (max-width:600px) {
+    .app_memory_game_heading {
+        font-size: 1.7rem;
+    }
+
+    .memory_game_container {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .app_memory_game_heading {
+        font-size: 1.6rem;
+    }
+
+    .memory_game_container {
+        width: 300px;
+        height: 300px;
+    }
+}

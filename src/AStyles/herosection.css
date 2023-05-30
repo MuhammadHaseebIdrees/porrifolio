@@ -1,0 +1,90 @@
+.hero_section_div {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.hero_section_div .upper_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.background_mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.intro_image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.background_mask::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.freelancer_text {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 100;
+}
+
+.react_developer_text {
+    font-size: 4rem;
+    color: white;
+    padding: 0.6rem 0 1.5rem;
+    font-weight: 600;
+}
+
+.single_btn {
+    margin: 10px 2px;
+    padding: 15px 30px;
+}
+
+.project_btn {
+    background-color: yellow;
+    border: 1px solid white;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact_btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project_btn:hover,
+.contact_btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width:640px) {
+    .freelancer_text {
+        font-size: 1.4rem;
+    }
+
+    .react_developer_text {
+        font-size: 3rem;
+    }
+}

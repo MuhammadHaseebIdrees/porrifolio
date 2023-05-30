@@ -1,0 +1,119 @@
+.weather_main_div {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(214, 211, 211);
+}
+
+.box_weather {
+    width: auto;
+    min-height: 20rem;
+    padding: 3rem;
+    background-color: skyblue;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.63);
+}
+
+.app_weather_heading {
+    margin-bottom: 1.7rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.input_search_w input {
+    height: 2.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.input_search_w input::placeholder {
+    color: black;
+}
+
+.input_search_w input:focus {
+    outline: none;
+}
+
+.input_search_w input:focus::placeholder {
+    color: transparent;
+}
+
+.city_name_heading_weather {
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp_we_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.city_heading_w {
+    margin-left: 1rem;
+}
+
+.main_temp_value {
+    margin-top: 2.4rem;
+    font-size: 1.8rem;
+}
+
+.max_min_temp_w,
+.humidity_wet_app {
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+}
+
+.error_weather_w {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.date_Time_div_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media only screen and (max-width:420px) {
+    .box_weather {
+        padding: 3rem 2rem;
+        width: 90%;
+    }
+
+    .app_weather_heading {
+        font-size: 2.3rem;
+    }
+
+    .city_name_heading_weather {
+        font-size: 1.9rem;
+    }
+
+    .main_temp_value {
+        font-size: 1.5rem;
+    }
+
+    .max_min_temp_w {
+        font-size: 1.1rem;
+    }
+
+    .humidity_wet_app {
+        font-size: 1.1rem;
+    }
+}

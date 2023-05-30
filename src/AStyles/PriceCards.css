@@ -1,0 +1,77 @@
+.PriceCards {
+    width: 100%;
+    padding: 6rem 1rem;
+    background-color: black;
+}
+
+.cards_conatiner {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.single_card {
+    border: 1px solid #eee;
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+}
+
+.single_card:hover {
+    background-color: #141414;
+    transition: .3s;
+}
+
+.single_card h3 {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.single_card p {
+    padding: 10px 0;
+}
+
+.card_bar {
+    border-bottom: 1px solid #eee;
+    width: 10%;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.cards_price {
+    font-size: 4rem;
+    font-size: 600;
+    padding: 1rem 0;
+}
+
+.purchase_text {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #FFFF00;
+    height: 3rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+.days_text,
+.page_text,
+.featured_text,
+.responive_design {
+    font-weight: bold;
+}
+
+@media only screen and (max-width:740px) {
+    .cards_conatiner {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+}

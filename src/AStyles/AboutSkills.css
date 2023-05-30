@@ -1,0 +1,124 @@
+.about_skills_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5rem 0;
+}
+
+.skills_heading {
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about_skills_bars {
+    width: 80%;
+    padding: 2rem 0;
+}
+
+.text_of_language_skill {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.single_bar_of_skill {
+    width: 100%;
+    background-color: rgb(48, 45, 45);
+    height: 1.8rem;
+    margin: 1.2rem 0;
+    border-radius: 50px;
+}
+
+.fill_inside_bar {
+    background-color: #ffff00;
+    height: 1.8rem;
+    margin: 1.5rem 0;
+    border-radius: 50px;
+}
+
+.html_color_skill_bar {
+    width: 93%;
+}
+
+.css_color_skill_bar {
+    width: 85%;
+}
+
+.js_color_skill_bar {
+    width: 75%;
+}
+
+.react_color_skill_bar {
+    width: 80%;
+}
+
+@media only screen and (max-width:1000px) {
+    .skills_heading {
+        font-size: 2rem;
+    }
+
+    .about_skills_bars {
+        width: 85%;
+    }
+
+    .text_of_language_skill {
+        font-size: 1.2rem;
+    }
+
+    .single_bar_of_skill,
+    .fill_inside_bar {
+        height: 1.6rem;
+    }
+}
+
+@media only screen and (max-width:850px) {
+
+    .single_bar_of_skill,
+    .fill_inside_bar {
+        height: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .skills_heading {
+        font-size: 1.7rem;
+    }
+
+    .about_skills_bars {
+        padding: 1.5rem 0;
+        width: 90%;
+    }
+
+    .text_of_language_skill {
+        font-size: 1.1rem;
+    }
+
+    .single_bar_of_skill,
+    .fill_inside_bar {
+        height: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+
+    .about_skills_bars {
+        width: 94%;
+    }
+
+    .single_bar_of_skill,
+    .fill_inside_bar {
+        height: 0.6rem;
+    }
+}
+
+.new-animation {
+    width: 0;
+    animation: htmlAnim 1s linear 1 forwards;
+}
+@keyframes htmlAnim{
+    100%{
+        width: 100%;
+    }
+}
